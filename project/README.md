@@ -37,7 +37,7 @@
   2. Mediolateral Oblique (MLO).
 - It comprises 1, 429 Benign cases, 628 Normal cases and 1, 457 Malign cases.
 
-- ** Note: Approximately 80% of available data were randomly chosen to construct the training set and the remaining 20% of the data were used for performance evaluation or as a test data. **
+- **Note: Approximately 80% of available data were randomly chosen to construct the training set and the remaining 20% of the data were used for performance evaluation or as a test data.**
 
 ## Image Conversion from DICOM to JPEG:
 
@@ -53,8 +53,8 @@ def dicom_jpeg(case_frame):
 ```
 
 - Below two functions are used to convert DICOM to JPEG
-  1.	** dicom.read_file ** : It reads the complex files into natural pythonic structures for easy manipulation
-  2.	** scipy.misc.imsave ** : This function uses bytescale under the hood to rescale images to use the full (0, 255) range if mode is one of None, 'L', 'P', 'l'. It will also cast data for 2-D images to uint32 for mode = None
+  1.	**dicom.read_file** : It reads the complex files into natural pythonic structures for easy manipulation
+  2.	**scipy.misc.imsave** : This function uses bytescale under the hood to rescale images to use the full (0, 255) range if mode is one of None, 'L', 'P', 'l'. It will also cast data for 2-D images to uint32 for mode = None
 
 [Each step included in Image Conversion is explained here](https://github.com/palakagrawal912/agrawal_palak_spring18_ads/blob/master/project/analysis/ConvertDICOMToJPEG.ipynb)
 
@@ -94,7 +94,7 @@ def dicom_jpeg(case_frame):
     - Step5: Repeat steps 2-4 with all images in the training set.
 - The above steps train the ConvNet – this essentially means that all the weights and parameters of the ConvNet have now been optimized to correctly classify images from the training set.
 
-- ** Specification of parameters: **
+- **Specification of parameters:**
 
 ```
 Input layer: (128,128,3)
@@ -140,7 +140,7 @@ Accuracy achieved - 72.17%
 - We have provided an image for a jpeg-file which will be loaded and input to the Inception model, which will then output an array of numbers indicating how likely it is that the input-image is of each class.
 
 
-- ** Specification of parameters: **
+- **Specification of parameters:**
 
 ```
 Input layer: (299,299,3)
@@ -165,7 +165,7 @@ Accuracy achieved - 74.76%
 [Each step included in CNN model training is explained here](https://github.com/palakagrawal912/agrawal_palak_spring18_ads/blob/master/project/analysis/BreastCancerIdentification.ipynb)
 
 ## Folder Structure:
-| ** Path **| ** Purpose **|
+| **Path**| **Purpose**|
 |:-----------:|:------------:|
 | project/analysis/*.ipynb | Folder containing all the jupyter notebooks |
 | project/data/*.csv | Contains csv file providing details about images |   
