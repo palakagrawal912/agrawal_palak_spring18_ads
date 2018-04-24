@@ -130,7 +130,7 @@ Accuracy achieved - 72.17%
 
 [Each step included in CNN model training is explained here](https://github.com/palakagrawal912/agrawal_palak_spring18_ads/blob/master/project/analysis/BreastCancerIdentification.ipynb)
 
-### Using Transfer Learning using Inception V3 model:
+### Transfer Learning using Inception V3 model:
 
 ![Transfer Learning](raw_images/tl1.gif)![Transfer Learning](raw_images/tl2.gif)
 
